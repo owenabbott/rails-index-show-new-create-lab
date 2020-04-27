@@ -1,0 +1,12 @@
+<h1>Coupon Form</h1>
+<%= form_for(@coupon) do |f| %>
+
+
+    <%= f.label :store %>
+    <%= f.text_field :store %>
+    <h1>Store Coupon Code</h1><br>
+    <h1>note: I'm going by the tests, and I am not sure why they require this form to have the text above. Contextually I guess it would make the most sense as a submit button? But the submit button is required to have the text "create coupon," so I'm not sure what the intention of the spec is.</h1>
+    <%= f.label :coupon_code %>
+    <%= f.text_field :coupon_code %>
+    <%= f.submit "Submit Coupon" %>
+<% end %>
